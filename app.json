@@ -6,6 +6,7 @@
   "env": {
     "JAVA_BUTTER_CMS_API_KEY": {
       "description": "Key to authorize ButterCMS' SDK requests",
+      "description": "The API token of your ButterCMS account",
       "require": true
     }
   }

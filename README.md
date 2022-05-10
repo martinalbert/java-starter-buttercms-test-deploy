@@ -1,5 +1,3 @@
-TODO - change GitHub URLs to official ButterCMS' repos once they get created
-
 ![Java version](https://img.shields.io/badge/Java-8-red)
 
 # Spring Boot +  ButterCMS Starter Project
@@ -33,8 +31,6 @@ cd spring-starter-buttercms
 ```
 
 ### 2. Set API Token
-
-TODO - add .env.example
 
 To fetch your ButterCMS content, add your API token as an environment variable.
 
