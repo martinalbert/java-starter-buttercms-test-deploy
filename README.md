@@ -1,8 +1,8 @@
 ![Java version](https://img.shields.io/badge/Java-8-red)
 
-# Spring Boot +  ButterCMS Starter Project
+# Java Spring Boot +  ButterCMS Starter Project
 
-This Spring Boot starter project fully integrates with dynamic sample content from your ButterCMS account, 
+This Java Spring Boot starter project fully integrates with dynamic sample content from your ButterCMS account, 
 including main menu, pages, blog posts, categories, and tags, all with a beautiful, custom theme with already-implemented search functionality.
 All of the included sample content is automatically created in your account dashboard when you sign up for a free trial of ButterCMS.
 
@@ -26,8 +26,8 @@ The few other dependencies (Spring Boot, Java SDK for ButterCMS) are automatical
 To get started, first, clone the repo
 
 ```
-git clone https://github.com/HonzaStefanik/spring-starter-buttercms.git
-cd spring-starter-buttercms
+git clone https://github.com/ButterCMS/java-starter-buttercms.git
+cd java-starter-buttercms
 ```
 
 ### 2. Set API Token
