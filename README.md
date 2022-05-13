@@ -2,14 +2,16 @@
 
 # Java Spring Boot +  ButterCMS Starter Project
 
-This Java Spring Boot starter project fully integrates with dynamic sample content from your ButterCMS account, 
-including main menu, pages, blog posts, categories, and tags, all with a beautiful, custom theme with already-implemented search functionality.
-All of the included sample content is automatically created in your account dashboard when you sign up for a free trial of ButterCMS.
+This Java + Spring Boot starter project fully integrates with dynamic sample 
+content from your ButterCMS account, including main menu, pages, blog posts, 
+categories, and tags, all with a beautiful, custom theme with already-implemented 
+search functionality. All of the included sample content is automatically created 
+in your account dashboard when you sign up for a free trial of ButterCMS.
 
-[View our live demo hosted at Heroku](https://spring-starter-buttercms.herokuapp.com/), or you can click a button below
+[View our live demo hosted at Heroku](https://java-starter-buttercms.herokuapp.com/), or you can click a button below
 to deploy your own copy of our starter project to the provider of your  choice.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HonzaStefanik/spring-starter-buttercms.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ButterCMS/java-starter-buttercms&env%5BJAVA_BUTTER_CMS_API_KEY%5D=check%20https://buttercms.com/settings)
 
 
 ## 1. Installation
@@ -23,7 +25,7 @@ This project requires two dependencies in order to get  up and running. They are
 
 The few other dependencies (Spring Boot, Java SDK for ButterCMS) are automatically managed by Maven.
 
-To get started, first, clone the repo
+To get started, clone and cd into the repo.
 
 ```
 git clone https://github.com/ButterCMS/java-starter-buttercms.git
@@ -40,29 +42,28 @@ To fetch your ButterCMS content, add your API token as an environment variable.
 
 Build the project with the following command
 
-`mvn install -DskipTests`
+`$ mvn install -DskipTests`
 
 ### 4. Run the project
 
-To run the project, use the following command
+To view the app in the browser, you'll need to run the local development server:
 
-`mvn spring-boot:run`
+`$ mvn spring-boot:run`
 
-Your starter project is now live at http://localhost:8080
+Congratulations! Your starter project is now live. To view your project, 
+point your browser to [http://localhost:8080](http://localhost:8080).
 
 ## 5. Deploy on Heroku
 
-Deploy your Spring Boot app using Heroku. With a single click, you'll create a copy of our starter project in your Git provider account,
-instantly deploy it, and institute a full content workflow connected to your ButterCMS account. Smooth.
+Deploy your Spring Boot app using Heroku. With a single click, you'll create a 
+copy of our starter project in your Git provider account, instantly deploy it, 
+and institute a full content workflow connected to your ButterCMS account. Smooth.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HonzaStefanik/spring-starter-buttercms.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ButterCMS/java-starter-buttercms&env%5BJAVA_BUTTER_CMS_API_KEY%5D=check%20https://buttercms.com/settings)
 
 
-### 6. Webhooks
+### 6. Previewing Draft Changes
 
-The ButterCMS webhook settings are located at https://buttercms.com/webhooks/
-
-### 7. Previewing Draft Changes
-
-By default, your starter project is set up to allow previewing of draft changes saved in your ButterCMS.com account.
-To disable this functionality, set the following value in your .env file: JAVA_BUTTER_CMS_PREVIEW=false
+By default, your starter project is set up to allow previewing of draft changes 
+saved in your ButterCMS.com account. To disable this functionality, set the 
+following value in your .env file: JAVA_BUTTER_CMS_PREVIEW=false
