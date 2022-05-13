@@ -18,12 +18,7 @@ to deploy your own copy of our starter project to the provider of your  choice.
 
 ### Prerequisites
 
-This project requires two dependencies in order to get  up and running. They are
-
-* Java 8
-* Maven
-
-The few other dependencies (Spring Boot, Java SDK for ButterCMS) are automatically managed by Maven.
+This project requires Java 8 and Maven. All other dependencies (Spring Boot, Java SDK for ButterCMS) are automatically managed by Maven.
 
 To get started, clone and cd into the repo.
 
