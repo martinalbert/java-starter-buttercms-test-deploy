@@ -65,4 +65,4 @@ The ButterCMS webhook settings are located at https://buttercms.com/webhooks/
 ### 7. Previewing Draft Changes
 
 By default, your starter project is set up to allow previewing of draft changes saved in your ButterCMS.com account.
-To disable this functionality, set the following value in your .env file: BUTTER_CMS_PREVIEW=false
+To disable this functionality, set the following value in your .env file: JAVA_BUTTER_CMS_PREVIEW=false
