@@ -2,7 +2,8 @@
   "name": "Java Spring Boot + ButterCMS Starter Project",
   "description": "Drop-in proof-of-concept Java + Spring app, fully integrated with your ButterCMS account",
   "repository": "https://github.com/ButterCMS/java-starter-buttercms",
-  "keywords": ["buttercms", "java", "spring", "spring boot"],
+  "logo": "https://cdn.buttercms.com/R3fbtvoRT2CqEQSmk8hb",
+  "keywords": ["buttercms", "java", "spring", "spring boot", "spring", "blog"],
   "env": {
     "JAVA_BUTTER_CMS_API_KEY": {
       "description": "The API token of your ButterCMS account",
