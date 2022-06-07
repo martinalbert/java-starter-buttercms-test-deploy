@@ -16,19 +16,22 @@ public class PageCollectionService {
 
     private final IButterCMSClient butterCMSClient;
 
+    private final static String DEFAULT_LANDING_PAGE = "landing-page-with-components";
+
     public PageCollectionService(IButterCMSClient butterCMSClient) {
         this.butterCMSClient = butterCMSClient;
     }
 
-    public LandingPageDto getLandingPage() {
+    public LandingPageDto getLandingPage(String pageType, String slug) {
+        slug = slug == null ? DEFAULT_LANDING_PAGE : slug;
         Map<String, String> queryParams = new HashMap<String, String>() {{
             put("page", "1");
             put("page_size", "2");
         }};
         List<Post> posts = butterCMSClient.getPosts(queryParams).getData();
         Fields landingPage = butterCMSClient.getPage(
-                "*",
-                "landing-page-with-components",
+                pageType,
+                slug,
                 new HashMap<>(),
                 Fields.class
         ).getData().getFields();
