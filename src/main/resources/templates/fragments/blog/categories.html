@@ -3,8 +3,8 @@
 <body>
 <div class="widget categories-widget">
     <h5 class="widget-title">Categories</h5>
-    <ul th:each="category: ${categories}" class="categories-list">
-        <li>
+    <ul class="categories-list">
+        <li th:each="category: ${categories}">
             <a th:text="${category.name}" th:href="|/blog/category/${category.slug}/|"></a>
         </li>
     </ul>
