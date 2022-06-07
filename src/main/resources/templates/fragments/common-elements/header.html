@@ -22,7 +22,7 @@
                             <div class="ms-auto">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li th:each="item :${menuItems}" class="nav-item">
-                                        <a class="page-scroll" th:href="|/${item.url}|">[(${item.label})]</a>
+                                        <a class="page-scroll" th:href="|/${item.url}/|">[(${item.label})]</a>
                                     </li>
                                  </ul>
                              </div>
