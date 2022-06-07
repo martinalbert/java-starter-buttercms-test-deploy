@@ -37,13 +37,19 @@ To fetch your ButterCMS content, add your API token as an environment variable.
 
 Build the project with the following command
 
-`$ mvn install -DskipTests`
+`$ mvn install`
 
 ### 4. Run the project
 
 To view the app in the browser, you'll need to run the local development server:
 
 `$ mvn spring-boot:run`
+
+Alternatively, you can run it directly via the `java` command
+
+`$ java -jar target/spring-starter-buttercms-*.jar`
+
+where the file name `spring-starter-buttercms` will be appended by the value of the version tag `<version>` in [pom.xml](pom.xml)
 
 Congratulations! Your starter project is now live. To view your project, 
 point your browser to [http://localhost:8080](http://localhost:8080).
@@ -61,4 +67,4 @@ and institute a full content workflow connected to your ButterCMS account. Smoot
 
 By default, your starter project is set up to allow previewing of draft changes 
 saved in your ButterCMS.com account. To disable this functionality, set the 
-following value in your .env file: JAVA_BUTTER_CMS_PREVIEW=false
+following value in your .env file: `JAVA_BUTTER_CMS_PREVIEW=false`
