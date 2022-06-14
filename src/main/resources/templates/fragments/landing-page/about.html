@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <body>
-<div th:fragment="about (scrollAnchorId)">
-    <section th:id="${scrollAnchorId}" class="cta-section">
+<div th:fragment="about (section)">
+    <section th:id="${section.scrollAnchorId}" class="cta-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 order-last order-lg-first">

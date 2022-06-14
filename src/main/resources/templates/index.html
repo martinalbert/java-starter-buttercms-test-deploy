@@ -58,12 +58,12 @@
 <div th:insert="fragments/common-elements/header :: header"></div>
 <!-- ========================= header end ========================= -->
 
-<div th:each="section: ${sections}">
-    <div th:if='${section.scrollAnchorId.equals("home")}' th:insert="fragments/landing-page/home :: home (scrollAnchorId=${section.scrollAnchorId})"></div>
-    <div th:if='${section.scrollAnchorId.equals("about")}' th:insert="fragments/landing-page/about :: about (scrollAnchorId=${section.scrollAnchorId})"></div>
-    <div th:if='${section.scrollAnchorId.equals("features")}' th:insert="fragments/landing-page/features :: features (scrollAnchorId=${section.scrollAnchorId})"></div>
-    <div th:if='${section.scrollAnchorId.equals("tryit")}' th:insert="fragments/landing-page/try-it :: tryit (scrollAnchorId=${section.scrollAnchorId})"></div>
-    <div th:if='${section.scrollAnchorId.equals("testimonials")}' th:insert="fragments/landing-page/testimonials :: testimonials (scrollAnchorId=${section.scrollAnchorId})"></div>
+<div th:each="field: ${fields}">
+    <div th:if='${field.getType().equals("hero")}' th:insert="fragments/landing-page/home :: home (section=${field.section})"></div>
+    <div th:if='${field.getType().equals("about")}' th:insert="fragments/landing-page/about :: about (section=${field.section})"></div>
+    <div th:if='${field.getType().equals("features")}' th:insert="fragments/landing-page/features :: features (section=${field.section})"></div>
+    <div th:if='${field.getType().equals("tryit")}' th:insert="fragments/landing-page/try-it :: tryit (section=${field.section})"></div>
+    <div th:if='${field.getType().equals("testimonials")}' th:insert="fragments/landing-page/testimonials :: testimonials (section=${field.section})"></div>
 </div>
 
 <!-- ========================= blog-section start ========================= -->

@@ -1,6 +1,8 @@
 package com.buttercms.springstarterbuttercms.controller;
 
 import com.buttercms.springstarterbuttercms.controller.dto.LandingPageDto;
+import com.buttercms.springstarterbuttercms.model.landingpage.Field;
+import com.buttercms.springstarterbuttercms.model.landingpage.Fields;
 import com.buttercms.springstarterbuttercms.model.landingpage.Section;
 import com.buttercms.springstarterbuttercms.model.landingpage.Seo;
 import com.buttercms.springstarterbuttercms.service.PageCollectionService;
@@ -24,11 +26,10 @@ public class IndexController {
     public String index(@PathVariable(required = false) String slug, Model model) {
         LandingPageDto landingPage = pageCollectionService.getLandingPage("landing-page", slug);
         Seo seo = landingPage.getFields().getSeo();
-        List<Section> sections = landingPage.extractSections(landingPage.getFields());
         model.addAttribute("posts", landingPage.getPosts());
         model.addAttribute("seoTitle", seo.getTitle());
         model.addAttribute("seoDescription", seo.getDescription());
-        model.addAttribute("sections", sections);
+        model.addAttribute("fields", landingPage.getFields().getFields());
         return "index";
     }
 }

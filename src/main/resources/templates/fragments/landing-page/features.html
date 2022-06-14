@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body>
-<div th:fragment="features (scrollAnchorId)">
-    <section th:id="${scrollAnchorId}" class="feature-section">
+<div th:fragment="features (section)">
+    <section th:id="${section.scrollAnchorId}" class="feature-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-10">
