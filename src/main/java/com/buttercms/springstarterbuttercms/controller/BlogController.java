@@ -4,10 +4,7 @@ import com.buttercms.springstarterbuttercms.controller.dto.BlogsDto;
 import com.buttercms.springstarterbuttercms.service.BlogService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class BlogController {
@@ -67,8 +64,8 @@ public class BlogController {
         return "blogs";
     }
 
-    @PostMapping("/blog/search")
-    public String search(@RequestParam String searchTerm, Model model) {
+    @GetMapping(value = "/blog/search")
+    public String search(@RequestParam(name = "q", required = false, defaultValue = "") String searchTerm, Model model) {
         BlogsDto blogsDto = blogService.searchBlogs(searchTerm);
         model.addAttribute("posts", blogsDto.getPosts());
         model.addAttribute("categories", blogsDto.getCategories());
