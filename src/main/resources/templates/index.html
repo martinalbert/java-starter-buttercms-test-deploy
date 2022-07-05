@@ -60,9 +60,9 @@
 
 <div th:each="field: ${fields}">
     <div th:if='${field.getType().equals("hero")}' th:insert="fragments/landing-page/home :: home (section=${field.section})"></div>
-    <div th:if='${field.getType().equals("about")}' th:insert="fragments/landing-page/about :: about (section=${field.section})"></div>
+    <div th:if='${field.getType().equals("two_column_with_image")}' th:insert="fragments/landing-page/two_column_with_image :: about (section=${field.section})"></div>
     <div th:if='${field.getType().equals("features")}' th:insert="fragments/landing-page/features :: features (section=${field.section})"></div>
-    <div th:if='${field.getType().equals("tryit")}' th:insert="fragments/landing-page/try-it :: tryit (section=${field.section})"></div>
+  <!--  <div th:if='${field.getType().equals("two_column_with_image")}' th:insert="fragments/landing-page/try-it :: tryit (section=${field.section})"></div>-->
     <div th:if='${field.getType().equals("testimonials")}' th:insert="fragments/landing-page/testimonials :: testimonials (section=${field.section})"></div>
 </div>
 
