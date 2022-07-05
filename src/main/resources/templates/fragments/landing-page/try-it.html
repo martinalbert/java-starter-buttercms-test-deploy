@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body>
-<div th:fragment="tryit (scrollAnchorId)">
-    <section th:id="${scrollAnchorId}" class="cta-section pt-130">
+<div th:fragment="tryit (section)">
+    <section th:id="${section.scrollAnchorId}" class="cta-section pt-130">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-10">
