@@ -16,6 +16,8 @@ to deploy your own copy of our starter project to the provider of your  choice.
 [![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/martinalbert/java-starter-buttercms-test)
 <!-- %23JAVA_BUTTER_CMS_API_KEY=specialuniquevalue -->
 
+[![Deploy](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/martinalbert/java-starter-buttercms-test)
+
 ## 1. Installation
 
 ### Prerequisites
