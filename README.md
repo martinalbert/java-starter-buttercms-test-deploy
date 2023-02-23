@@ -11,7 +11,7 @@ in your account dashboard when you sign up for a free trial of ButterCMS.
 [View our live demo hosted at Heroku](https://java-starter-buttercms.herokuapp.com/), or you can click a button below
 to deploy your own copy of our starter project to the provider of your  choice.
 
-[![Deploy to Vercel](https://vercel.com/button)](https://github.com/martinalbert/java-starter-buttercms-test/dispatch/workflows/deploy-to-vercel?ref=main)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmartinalbert%2Fjava-starter-buttercms-test/dispatch/workflows/deploy-to-vercel?ref=master&env=JAVA_BUTTER_CMS_API_KEY)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ButterCMS/java-starter-buttercms&env%5BJAVA_BUTTER_CMS_API_KEY%5D=check%20https://buttercms.com/settings)
 
