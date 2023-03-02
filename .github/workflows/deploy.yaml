@@ -17,9 +17,7 @@ jobs:
           java-version: 11
 
       - name: Build frontend with Maven
-        run: |
-          cd frontend
-          mvn install
+        run: mvn install
 
       - name: Start Java Spring app
         run: mvn spring-boot:run

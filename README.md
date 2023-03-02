@@ -16,6 +16,9 @@ to deploy your own copy of our starter project to the provider of your  choice.
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ButterCMS/java-starter-buttercms&env%5BJAVA_BUTTER_CMS_API_KEY%5D=check%20https://buttercms.com/settings)
 
 [![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/martinalbert/java-starter-buttercms-test)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/martinalbert/java-starter-buttercms-test#JAVA_BUTTER_CMS_API_KEY=Your_ButterCMS_Token_Here&BUTTERCMS_PREVIEW=false)
+
 <!-- %23JAVA_BUTTER_CMS_API_KEY=specialuniquevalue -->
 
 [![Deploy](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/martinalbert/java-starter-buttercms-test)
